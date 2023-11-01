@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<!--Working on the title and concept, this can be a placeholder for now...-->
+
+<!--Title and intro-->
+    <h1 id="title">Dinner Survey</h1>
+    <p id="description">This survey is to help us determine what we would like for dinner and where to get it!</p>
+
+<!--Form information-->
+    <form id="survey-form">
+      
+<!--Basic info-->
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input id="name" name="name" type="text" class="about" required placeholder="Bennington Chesterfield esc.">
+        </label> 
+        <label for="email" id="email-label">Email
+          <input id="email" name="email" type="email" class="about" required placeholder="iamhungry@feedme.com">
+        <label for="number" id="number-label">Number of guests (0-10)
+          <input id="number" type="number" min="0" max="10" pattern="[0-10]" class="about" placeholder="0-10 (Optional)">
+          <hr class="bottom-line">
+        </label>
+      </fieldset>
+
+<!--Dropdown-->
+      <fieldset id="dropdown-list">
+        <label for="dropdown" id="dropdown-menu">How hungry are you?
+          <select required id="dropdown">
+            <option value="0">(select one)</option>
+            <option value="1">I'm stuffed</option>
+            <option value="2">My dessert stomach isn't full...</option>
+            <option value="3">I could eat</option>
+            <option value="4">I'm hungry</option>
+            <option value="5">I'm literally going to die</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id="radio-checkboxes">
+<!--Radio-->
+        <label>Where should we eat?
+        </label>
+        <label for="home" class="radio-label">Home
+          <input id="home" name="where" type="radio" class="inline" value="home">
+        </label>
+        <label for="out" class="radio-label">Out
+          <input id="out" name="where" type="radio" class="inline" value="out">
+        </label>
+        <label for="pickup" class="radio-label">Pickup
+          <input id="pickup" name="where" type="radio" class="inline" value="pickup">
+        </label>
+        <label for="delivery" class="radio-label">Delivery
+          <input id="delivery" name="where" type="radio" class="inline" value="delivery">
+        </label>
+        
+<!--Checkboxes-->
+        <label id="checkbox-title">Food preferences? (Check all that apply)
+        </label>
+        <label for="american" class="checkbox-label">American
+          <input value="american" id="american" type="checkbox" class="inline">
+        </label>
+        <label for="anything" class="checkbox-label">Anything
+          <input value="anything" id="anything" type="checkbox" class="inline">
+        </label>
+        <label for="asian" class="checkbox-label">Asian
+          <input value="asian" id="asian" type="checkbox" class="inline">
+        </label>
+        <label for="breakfast" class="checkbox-label">Breakfast
+          <input value="breakfast" id="breakfast" type="checkbox" class="inline">
+        </label>
+        <label for="fast-food" class="checkbox-label">Fast Food
+          <input value="fast-food" id="fast-food" type="checkbox" class="inline">
+        </label>
+        <label for="greek" class="checkbox-label">Greek
+          <input value="greek" id="greek" type="checkbox" class="inline">
+        </label>
+        <label for="indian" class="checkbox-label">Indian
+          <input value="indian" id="indian" type="checkbox" class="inline">
+        </label>
+        <label for="italian" class="checkbox-label">Italian
+          <input value="italian" id="italian" type="checkbox" class="inline">
+        </label>
+        <label for="mexican" class="checkbox-label">Mexican
+          <input value="mexican" id="mexican" type="checkbox" class="inline">
+        </label>
+        <label for="pizza" class="checkbox-label">Pizza
+          <input value="pizza" id="pizza" type="checkbox" class="inline">
+        </label>
+        <label for="sandwiches" class="checkbox-label">Sandwiches
+          <input value="sandwiches" id="sandwiches" type="checkbox" class="inline">  
+        </label>
+        <hr class="middle-line">
+      </fieldset>
+
+<!--Text Box-->
+      <fieldset id="text-box">
+        <label>Any comments or Suggestions?
+        </label>
+          <textarea class="comment" rows="5" placeholder="Enter your comments here..."></textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
