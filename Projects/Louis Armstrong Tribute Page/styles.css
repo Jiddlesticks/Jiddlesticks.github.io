@@ -1,0 +1,127 @@
+@media (prefers-reduced-motion: no-preference) {
+        * {
+          scroll-behavior: smooth;
+        }
+      }
+
+body {
+  background-color: #ECF1E6;
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 1em auto;
+  display: flex;
+}
+
+main {
+  width: 97vw;
+  margin: auto;
+  background-color: #FFFFFE;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 1.5em auto 1.5em auto;
+}
+
+#bio {
+  max-width: 800; 
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+#img-div {
+  width: 95vw;
+  margin: auto;
+  padding: 20px 0 5px 0;
+  background-color: #ECF1E6;
+}
+
+#image {
+  display: block;
+  width: 60vw;
+	max-width: 100%;
+  max-height: 73.8%;
+ 	margin: 0 auto;
+  border-radius: 10px;
+}
+
+figcaption {
+
+  font-style: italic;
+}
+
+h2 {
+  padding: 1em 20px 0 20px;
+}
+
+#instructions {
+  padding: 10px 0 10px 0;
+  font-style: italic;
+}
+
+ul {
+  display: table;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.hyperlink {
+  color: black;
+  text-decoration: none;
+}
+
+.hyperlink:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+li {
+  padding-bottom:15px;
+}
+
+#bottom-line {
+  padding-bottom: 0;
+}
+
+#favorite {
+  font-weight: bold;
+  margin: 1.5em auto 1.5em auto;
+}
+
+#my-favorite {
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+
+hr {
+  width: 75vw;
+  height: 5px;
+  background-color: #ECF1E6;
+  border: none;
+  border-radius: 5px;
+}
+
+#quote {
+  padding: 10px 30px 0 30px;
+  width: 45vw;
+  min-width: 300px;
+  margin: auto;
+}
+
+.quote {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#quote-attribution {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+footer {
+  padding: 5px 20px 0 20px;
+  margin-bottom: 4em;
+  font-weight: bold;
+}
