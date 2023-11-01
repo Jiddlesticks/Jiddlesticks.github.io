@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joel Jewett">
+    <title>Cookie Finder</title>
+    <meta name="description" content="Find cookies near you!">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/icons8-cookie-3d-fluency-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/icons8-cookie-3d-fluency-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./Images/icons8-cookie-3d-fluency-96.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--Navigation Bar--> 
+
+        <header id="header"> 
+            <img id="header-img" src="./Images/Logo.png" alt="cookie"/>
+            <nav id="nav-bar">
+                <ul id="nav-list">
+                    <a class="nav-link" href="#cookie-map">
+                        <li>Cookie Search</li>
+                    </a>
+                    <a class="nav-link" href="#world-of-cookies">
+                        <li>Explore the World of Cookies</li>
+                    </a> 
+                    <a class="nav-link" href="#recipe-video">
+                        <li>Chocolate Chip Recipe</li>
+                    </a>
+                    <a class="nav-link" href="#email-info">
+                        <li>Email list</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section" id="Intro">
+                <h1>Delicious Cookies and Where to Find Them</h1>
+                <p>Welcome to Cookie Finder, your go-to destination for satisfying your cookie cravings! Whether you're a dedicated cookie enthusiast or simply on the hunt for a sweet treat, we've got you covered. Our interactive map powered by Google Maps allows you to explore cookie shops near and far, making it easier than ever to discover the perfect cookies in your vicinity.</p>
+                <h2>How to use the Map:</h2>
+                <ol id="instruction-list">
+                    <li><span class="bolded-list-items">Enter Your Location: </span>Type in your current location or any area you'd like to search for cookies.</li>
+                    <li><span class="bolded-list-items">Hit the Search Button: </span>Click the search button, and watch as our map populates with delightful cookie shops within a 5 mile radius.</li>
+                    <li><span class="bolded-list-items">Explore and Indulge: </span>Browse the map markers to find details about each shop, including their cookie offerings, reviews, and contact information.</li>
+                    <li><span class="bolded-list-items">Plan Your Visit: </span>With Cookie Finder, you're just a click away from cookie bliss. Plan your visit, grab some friends, and embark on a cookie adventure today!</li>
+                </ol>
+            </section>
+
+            <section class="section" id="cookie-map">
+                <p><strong>Ready to satisfy your sweet tooth?</strong></p>
+                <input type="text" id="location-input" class="input-with-clear" placeholder="Enter a location">
+                <span class="clear-button" id="clear-button">&#x2A02;</span>
+                <button id="search-button">Search</button>
+                <div id="map"></div>
+            </section>
+
+            <section class="section" id="world-of-cookies">
+                <h1>Explore the World of Cookies</h1>
+                <p>Cookies, in all their sweet, bite-sized glory, have a rich and diverse history that spans the globe. From their humble beginnings to the delectable creations we savor today, cookies come in an array of flavors, textures, and traditions. Join us as we delve into the world of cookies, each with its unique story and charm.</p>
+                <h2>Popular Cookies and Their Origins:</h2>
+                <ol id="world-cookies">
+                    <li><span class="bolded-list-items">Chocolate Chip Cookies:</span> Originating in the United States, the iconic chocolate chip cookie has delighted taste buds since the 1930s. Ruth Wakefield's serendipitous discovery of melting chocolate into her cookie dough created a timeless classic loved for its gooey, melty centers and crisp edges.</li>
+                    <li><span class="bolded-list-items">Snickerdoodles:</span> A beloved American classic, snickerdoodle cookies are soft, chewy, and dusted with a cinnamon-sugar coating. Their origins in the United States are linked to Dutch and German immigrants, making them a comforting and aromatic favorite.</li>
+                    <li><span class="bolded-list-items">Macarons:</span> Hailing from France, macarons are a delicate confection with a crisp shell and a soft, chewy interior. These almond meringue wonders, often found in a spectrum of colors and flavors, have been a French pastry staple for centuries.</li>
+                    <li><span class="bolded-list-items">Shortbread Cookies:</span> Scotland is renowned for its buttery and crumbly shortbread cookies. These classic treats, with a rich history dating back to medieval times, are cherished for their simplicity and delightful taste.</li>
+                    <li><span class="bolded-list-items">Biscotti:</span> Italy's gift to the cookie world, biscotti, are twice-baked, crunchy delights meant for dipping in coffee or wine. Originating in Tuscany, these elongated cookies have a long history, dating back to Roman times.</li>
+                </ol>
+            </section>
+
+            <section class="section" id="recipe-video">
+                <h1>The Perfect Chocolate Chip Cookie, According to Jacques Torres | Food Skills</h1>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KnDSeGI0zJM?si=G6TYQTfzkfoEx4lC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Chocolate chip cookies are hard to screw up. But when a French pastry master and chocolatier gets his hands on the treat, the result is an elevated take on an all-American classic. Made with cake flour and cocoa butter-packed chocolate, Jacques Torres' infamous cookies are a perfect blend of salty and sweet—crisp on the outside, and warm and gooey in the center. Inside Torres' Brooklyn factory, Food Skills gets behind-the-scenes look at Mr. Chocolate's world-famous recipe. Check out his famous recipe <a href="https://mrchocolate.com/blogs/recipes/national-chocolate-chip-cookie-day" target="_blank">here</a>.</p>
+            </section>
+
+            <!--Forms-->
+
+            <section class="section" id="email-info">
+                <h2>Submit your email address and we'll contact you with more cookie info!</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" name="email" placeholder="johndoe@email.com">
+                    <input id="submit" type="submit">
+                </form>
+            </section>
+        </main>
+
+<!--Footer-->
+
+    <footer>
+
+        <ul id="attribution-list">Images by: 
+            <li id="attribution-link"><a href="https://unsplash.com/@starvingartistfoodphotography" target="_blank">Christina Branco</a></li>
+            <li id="attribution-link"><a  href="https://icons8.com/icon/97668/cookie" target="_blank">Cookie</a> icon by <a href="https://icons8.com">Icons8</a></li>
+        </ul>
+    </footer>
+
+    <!--Scripts-->
+
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrAp7N5BirZJ1h_2VMN-wwVgBDnk4SHfs&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

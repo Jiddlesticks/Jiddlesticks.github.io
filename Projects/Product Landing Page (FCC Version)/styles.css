@@ -1,0 +1,224 @@
+/*Universal Rules*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://unsplash.com/photos/7P-wc2Z2Ujs/download?force=true");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Tahoma, sans-serif;
+    font-size: larger;
+    z-index: -1;
+}
+
+/*Background Opacity*/
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.9);
+    z-index: -2;
+}
+
+/*Header*/
+
+header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 2vw 48vw 48vw 2vw;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#0A758F40 60%, #00000000);
+    backdrop-filter: blur(25px);
+    margin: 0;
+    padding-bottom: 1rem;
+    z-index: 100;
+}
+
+#header-img {
+    grid-column: 2 / 3;
+    margin: auto 0 auto;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: end;
+}
+
+#nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3.75rem 0 0 0;
+}
+
+/*Main*/
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+section:first-of-type {
+    padding-top: 0rem;
+}
+
+hr {
+    border: 1px solid orangered;
+    border-left: none;
+    border-right: none;
+    width: 60vw;
+    padding: 1px;
+}
+
+h1 {
+    font-size: larger;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: 900;
+    padding-top: 1rem;
+}
+
+/*Lists*/
+
+.bolded-list-items {
+    color: orangered;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#instruction-list {
+    display: grid;
+    grid-template-columns: repeat(4, 22vw);
+    column-gap: 2vw;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1;
+    text-align: left;
+}
+
+#world-cookies {
+    text-align: left;
+    margin-left: 0;
+}
+
+#world-cookies li {
+    padding-bottom: 1rem;
+}
+
+/*Map and Map Inputs*/
+
+#map {
+    height: 24rem;
+    width: 42.7rem;
+    border: 4px outset lightgray;
+    margin: 2rem auto;
+    transition: width 0.5s ease;
+}
+
+#location-input {
+    font-size: large;
+    padding-right: 30px;
+    margin-top: .75rem;
+}
+
+#search-button {
+    font-size: large;
+    position: relative;
+    left: -1rem;
+}
+
+.clear-button {
+    position: relative;
+    right: 24px;
+    cursor: pointer;
+    color: #999;
+    font-size: medium;
+    z-index: 1;
+}
+
+.clear-button:hover {
+    color: #333;
+}
+
+/*Footer*/
+
+footer {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    font-size: small;
+    text-align: center;
+}
+
+#attribution-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 800px) {
+    #nav-list {
+        flex-direction: column;
+        gap: .2rem;
+        margin: auto 1rem auto auto;
+    }
+
+    /* Need to play with this
+
+    #instruction-list {
+        display: grid;
+        grid-template-columns: repeat(4, 22vw);
+        column-gap: 2vw;
+        justify-content: center;
+        padding: 1rem 1rem 1rem 1;
+        text-align: left;
+    }
+
+    */
+
+    #map {
+        height: 18rem;
+        width: 24rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    header {
+        display: block;
+    }
+
+    #header-img {
+        display: block;
+        margin: 0 auto .25rem;
+        justify-content: center;
+    }
+    
+    #nav-list {
+        margin: auto;
+        justify-content: center;
+    }
+
+    main {
+        padding-top: 176px;
+    }
+}
